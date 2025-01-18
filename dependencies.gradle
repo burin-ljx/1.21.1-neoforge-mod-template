@@ -1,0 +1,4 @@
+dependencies {
+    api("com.tterrag.registrate:Registrate:${libs.versions.registrate.get()}")
+    jarJar("com.tterrag.registrate:Registrate:${libs.versions.registrate.get()}")
+}

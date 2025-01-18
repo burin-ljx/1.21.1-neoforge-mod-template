@@ -1,0 +1,6 @@
+repositories {
+    maven {
+        name = "Ithundxr Maven"
+        url = "https://maven.ithundxr.dev/snapshots"
+    }
+}

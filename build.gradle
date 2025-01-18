@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+    id 'eclipse'
+    id 'idea'
+    alias libs.plugins.modDevGradle
+}
+
+group = 'dev.burin'
+version = '1.0-SNAPSHOT'
+
+// moddevgradle
+apply from: "$rootDir/gradle/scripts/moddevgradle.gradle"
+apply from: "$rootDir/gradle/scripts/repositories.gradle"
+apply from: "$rootDir/gradle/scripts/jars.gradle"
+apply from: "$rootDir/gradle/scripts/resources.gradle"
+apply from: "$rootDir/dependencies.gradle"
+//repositories
+// jars
+// resources
+// dependencies
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+compileJava.options.encoding = 'UTF-8'
