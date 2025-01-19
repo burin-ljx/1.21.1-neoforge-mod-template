@@ -24,7 +24,7 @@ displayName="${mod_name}"
 displayURL = "https://www.anvilcraft.dev/"
 issueTrackerURL = "https://github.com/Anvil-Dev/AnvilCraft/issues"
 logoFile = "pack.png"
-authors = "Gugle,XeKr"
+authors = ""
 
 # The description text for the mod (multi line!) (#mandatory)
 description = '''
